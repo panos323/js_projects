@@ -1,0 +1,124 @@
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+.mainContainer{
+    width:90%;
+    margin:0 auto;
+}
+
+#container{
+    border:2px solid salmon;
+    margin-bottom:20px;
+    padding:20px;
+}
+
+.studentsDetails{
+    text-align: center;
+    background-color: purple;
+    color:white;
+}
+
+#titleHeader{
+    text-align: center;
+    background-color: aqua;
+    border-radius: 25px;
+    transition: color  0.6s ease-in, background 2s ease-out;
+    margin:50px 0;
+}
+
+#titleHeader:hover{
+    background-color: rgb(81, 114, 136);
+    color:white;
+
+}
+
+
+button{
+   background: linear-gradient(90deg,#3603ff,#a47ee9);
+   color:#fff;
+   border-radius: 25px;
+   letter-spacing: 1px;
+   transition: .2s;
+   padding:14px;
+   cursor:pointer;
+   width:50%;
+   transform: perspective(500px) rotateY(-15deg);
+   text-shadow: 6px 3px 2px rgba(0,0,0,.4);
+   overflow: hidden;
+   text-align: center;
+   display:block;
+   margin:0 auto;
+ }
+
+button::before{
+    content:"";
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    left:-100%;
+    background: linear-gradient(90deg,#5233cf,transparent,#fff,transparent);
+    transition: .5s;
+}
+
+
+button:hover::before{
+    left:100%;
+    text-shadow: 6px 3px 2px rgba(0,0,0,.4);
+}
+
+button:hover{
+    transform: perspective(500px) rotateY(15deg);
+}
+
+
+/*SCROLL INDICATOR*/
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: orangered;
+    width: 0%;
+  }
+/*SCROLL INDICATOR*/
+
+
+footer{
+    width:100%;
+    background-color: black;
+    margin-top:150px;
+    height:150px;
+}
+
+footer h3{
+    text-align: center;
+    color:white;
+    line-height: 150px;
+}
+
+.failingStd{
+    background-color: red;
+    color:white;
+}
+
+.passingStd{
+    background-color: green;
+    color:white;
+}

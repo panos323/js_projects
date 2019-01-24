@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="css/quotes.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Quote Machine</h1>
+    </header>
+    <main class="flexQuotes">
+        <div>
+            <h2 id="quoteText">The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary.</h2>
+            <h3 id="quoteAuthor">Thomas Edison</h3>
+            <button id="quoteBtn">Next Quote</button>
+            <button id="quoteTwitter">Quote a Tweet</button>
+            <br>
+            <!-- link back to paperquotes.com-->
+            <span style="z-index:50;font-size:0.9em;">
+                <img src="http://api.paperquotes.com/static/images/paperquotes.png" height="20" width="20" alt="paperquotes.com">
+                <a href="http://paperquotes.com" title="Powered by quotes from paperquotes.com" style="color: orangered; margin-left: 4px; vertical-align: middle;" target="_blank">paperquotes.com
+                </a>
+            </span>
+            <!-- link back to paperquotes.com-->
+        </div>
+    </main>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="js/quote.js"></script>
+</body>
+</html>

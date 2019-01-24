@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing:border-box;
+}
+
+
+
+body{
+    width:90%;
+    height:100%;
+    margin:0 auto;
+    background-color: rgb(8, 8, 8);
+    background:url(../images/quoteBack.jpeg);
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    margin-top:50px;
+    text-align: center;
+    font-size:4rem;
+    color:transparent;
+    background:linear-gradient(
+    0deg,
+    rgb(52,67,93) 30%,
+    rgb(255,239,136) 50%,
+    rgb(252,127,83) 70%
+    );
+    -webkit-background-clip:text;
+    background-clip:text;
+    letter-spacing: 2px;
+}
+
+.flexQuotes{
+    margin-top:250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexQuotes div{
+    text-align: center;
+    color:white;
+}
+
+#quoteBtn{
+    padding:15px 30px;
+    border-radius:5px;
+    background:rgb(53, 136, 163);
+    margin:50px auto;
+    cursor:pointer;
+    margin-right:50px;
+    font-size:20px;
+    color:white;
+}
+
+#quoteTwitter{
+    padding:15px 30px;
+    border-radius:5px;
+    background:rgb(161, 87, 60);
+    margin:50px auto;
+    cursor:pointer;
+    margin-left:50px;
+    font-size:20px;
+    color:white;
+}
+
+#quoteBtn:hover{
+    background:rgb(0, 190, 253);
+    transition: background 0.25s ease-in-out;
+}
+
+#quoteTwitter:hover{
+    background:rgb(240, 67, 5);
+    transition: background 0.25s ease-in-out;
+}
+
+#quoteText{
+    margin-top:30px;
+    padding:0 10px;
+}
+
+#quoteAuthor{
+    margin-top:10px;
+    margin-bottom:40px;
+    padding:0 10px;
+    color:orangered;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .flexQuotes{
+        margin-top:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+
+    header h1{
+        margin-top:25px;
+    }
+
+    #quoteBtn{
+        display:block;
+        margin:0 auto;
+        margin-bottom:35px;
+        min-width:200px;
+    }
+
+    #quoteTwitter{
+        display:block;
+        margin:0 auto;
+        min-width:200px;
+    }
+
+   
+
+  }/*@media screen and (max-width: 540px) */
+
+
+
+
+
